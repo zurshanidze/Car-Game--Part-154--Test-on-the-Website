@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Car Drive Game</title>
+  </head>
+  <body>
+    <div class="sky">
+      <div class="details">
+        <div class="distance-wrapper">
+          <h2 id="distance" class="distance">
+            <span id="distance-text"
+              >Distance :
+              <span id="distance-km">0</span>
+              <span id="distance-text-km">KM</span>
+              <span id="distance-meters">0</span>
+              <span id="distance-text-meters">Meters</span>
+            </span>
+          </h2>
+          <button id="distance-btn" class="btn distance-btn">
+            KM And Meters
+          </button>
+        </div>
+      </div>
+
+      <button
+        id="btn-menu-settings"
+        class="btn btn-menu-settings btn-menu-settings-animated"
+      >
+        <!--     Menu & Settings -->
+      </button>
+
+      <div id="menu" class="menu">
+        <div id="menu-list" class="menu-list">
+          <div id="start" class="start menu-setting-all">Start</div>
+          <div id="change-steering-wheel" class="menu-setting-all">
+            Change Steering Wheel
+            <div
+              id="steering-wheels-list-container"
+              class="steering-wheels-list-container"
+            ></div>
+          </div>
+          <div id="change-car-color" class="menu-setting-all">
+            Change Car Color
+            <div
+              id="car-color-list-container"
+              class="car-color-list-container"
+            ></div>
+          </div>
+          <div id="author" class="author menu-setting-all">
+            Author
+            <div class="author-info"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="restart" class="restart menu-setting-all">Restart</div>
+    </div>
+
+    <div class="ground">
+      <div class="road-vector">
+        <div class="road"></div>
+        <div class="road-line-wrapper"></div>
+      </div>
+
+      <div class="mountains-vector">
+        <div class="mountains-range-left"></div>
+        <div class="mountains-range-right"></div>
+      </div>
+      <!--   <div class="cars-vector"></div> -->
+    </div>
+
+    <div class="car-interior"></div>
+
+    <div class="car-box">
+      <div class="steering-wheel"></div>
+    </div>
+    <div class="car-hood-wrapper">
+      <div id="car-hood" class="car-hood">
+        <div id="car-hood-damaged" class="car-hood-damaged"></div>
+      </div>
+    </div>
+
+    <div class="resolution-warning">
+      to play min screen size must equals - 720px
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
